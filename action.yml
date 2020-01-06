@@ -10,12 +10,16 @@ inputs:
     required: true
   kubectl:
     description: 'kubectl version e.g. 1.16.2'
+    required: false
   kustomize:
     description: 'kustomize version e.g. 3.4.0'
+    required: false
   helm:
     description: 'helm version e.g. 2.16.1'
+    required: false
   helmv3:
     description: 'helm version e.g. 3.0.0'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
